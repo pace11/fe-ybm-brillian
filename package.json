@@ -1,0 +1,47 @@
+{
+  "name": "frontend_ybm_brillian",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://ybm.janjiku.id/",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "js-cookie": "^2.2.1",
+    "react": "^17.0.1",
+    "react-collapsible": "^2.9.0",
+    "react-dom": "^17.0.1",
+    "react-loading": "^2.0.3",
+    "react-organizational-chart": "^2.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-slick": "^0.28.0",
+    "styled-components": "^5.1.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "cp .env.loc .env && react-scripts start",
+    "build": "rm -rf build/ && react-scripts build",
+    "build:prod": "cp .env.dev .env && rm -rf build/ && react-scripts build && cp .htaccess build/",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
